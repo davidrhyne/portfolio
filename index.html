@@ -3,20 +3,26 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>DevJane Portfolio Website</title>
+        <title>David's Portfolio Website</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
         
         <!-- Update these with your own fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
-        
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:400,900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+
         <link rel="stylesheet" href="css/style.css">
 
     </head>
     <body>
         <header>
             <div class="logo">
-                <img src="img/devjane.png" alt="">
+                <p>
+                    <i class="fas fa-chevron-left"></i>david
+                    <i class="fas fa-chevron-right"></i>
+                </p>
             </div>
             <button class="nav-toggle" aria-label="toggle navigation">
                 <span class="hamburger"></span>
@@ -34,10 +40,10 @@
         <!-- Introduction -->
         <section class="intro" id="home">
             <h1 class="section__title section__title--intro">
-                Hi, I am <strong>Jane Smith</strong>
+                Hi, I am <strong>David Rhyne</strong>
             </h1>
             <p class="section__subtitle section__subtitle--intro">front-end dev</p>
-            <img src="img/dev-jane-01.jpg" alt="a picture of Jane Smith smiling" class="intro__img">
+            <img src="./img/profile-1.jpg" alt="a picture of David Rhyne smiling" class="intro__img">
         </section>
         
         
@@ -47,17 +53,17 @@
             <div class="services">
                 <div class="service">
                     <h3>Design + Development</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <p>Transforming your visions into beautiful pages that looks great on any device!</p>
                 </div> <!-- / service -->
                 
                 <div class="service">
-                    <h3>E-Commerce</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <h3>Problem Solver</h3>
+                    <p>Life can be difficult, but web sites should not be.  Any complexity will be identified and diminished so that your visions flow effortlessly.</p>
                 </div> <!-- / service -->
                 
                 <div class="service">
-                    <h3>WordPress</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <h3>Project Management</h3>
+                    <p>Communication is the key to great project management. It starts with listening and capturing requirements, then translating them to working documents, and then confirming the final product works as expected.</p>
                 </div> <!-- / service -->
             </div> <!-- / services -->
             
@@ -68,14 +74,13 @@
         <!-- About me -->
         <section class="about-me" id="about">
            <h2 class="section__title section__title--about">Who I am</h2>
-           <p class="section__subtitle section__subtitle--about">Designer & developer based out of NYC</p>
+           <p class="section__subtitle section__subtitle--about">Front end developer based out of St Louis</p>
            
            <div class="about-me__body">
-               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+               <p>I am a problem solver with a new set of skills in front end web development. I am a quick learner that adapts to ever changing environments and will produce immediate value to the organization. </p>
            </div>
            
-           <img src="img/dev-jane-02.jpg" alt="Jane leaning against a bus" class="about-me__img">
+           <img src="./img/profile-2.jpg" alt="David in front of brick house" class="about-me__img">
         </section>
         
         <!-- My Work -->
@@ -85,8 +90,8 @@
             
             <div class="portfolio">
                 <!-- Portfolio item 01 -->
-                <a href="#" class="portfolio__item">
-                    <img src="img/portfolio-01.jpg" alt="" class="portfolio__img">
+                <a href="./pages/project1.html" class="portfolio__item">
+                    <img src="img/project-REST-API.png" alt="frontend mentor Rest Countries API project" class="portfolio__img">
                 </a>
                 
                 <!-- Portfolio item 02 -->
@@ -96,7 +101,7 @@
                 
                 <!-- Portfolio item 03 -->
                 <a href="#" class="portfolio__item">
-                    <img src="img/portfolio-03.jpg" alt="" class="portfolio__img">
+                    <img src="img/project-calculator.png" alt="frontend mentor javascript calculator project" class="portfolio__img">
                 </a>
                 
                 <!-- Portfolio item 04 -->
@@ -139,7 +144,6 @@
         
         <!-- Footer -->
         <footer class="footer">
-            <!-- replace with your own email address -->
             <a href="mailto:rhynedavid16@gmail.com" class="footer__link">rhynedavid16@gmail.com</a>
             <ul class="social-list">
                 <li class="social-list__item">
@@ -160,5 +164,7 @@
             </ul>
         </footer>
         
+        <script src='./src/index.js'></script>
+
     </body>
 </html>
