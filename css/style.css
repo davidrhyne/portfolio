@@ -7,6 +7,7 @@
 :root {
     --ff-primary: 'Source Sans Pro', sans-serif;
     --ff-secondary: 'Source Code Pro', monospace;
+    --ff-logo: 'Press Start 2P', monospace;
 
     
     --fw-reg: 400;
@@ -25,7 +26,7 @@
           0.125em 0.125em 0.25em rgba(0,0,0,.15);
 }
 
-@media (min-width: 800px) {
+@media (min-width: 1000px) {
     :root {
         --fs-h1: 4.5rem;
         --fs-h2: 3.75rem;
@@ -50,7 +51,11 @@ body {
 }
 
 section {
-    padding: 5em 2em;
+    padding: 4em 2em 3em 2em;
+
+    @media (min-width: 600px) {
+        padding: 5em 2em;
+    }
 }
 
 img {
@@ -219,11 +224,6 @@ header {
     opacity: 0;
 }
 
-
-
-
-
-
 .hamburger {
     display: block;
     position: relative;
@@ -266,7 +266,7 @@ header {
     display: inline-block;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 750px) {
     .intro {
         display: grid;
         width: min-content;
@@ -357,7 +357,7 @@ header {
     margin: 0 auto;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 750px) {
     .about-me {
         display: grid;
         grid-template-columns: 1fr 200px;
@@ -478,22 +478,62 @@ header {
 /* Individual portfolio item styles */
 
 .portfolio-item-individual {
-    padding: 0 2em 2em;
+    padding: 0 2em 1em;
     max-width: 1000px;
     margin: 0 auto;
 }
 
-.portfolio-item-individual p {
-    max-width: 600px;
+.portfolio-item-individual p,
+.portfolio-item-hightlight {
+    max-width: 750px;
     margin-left: auto;
     margin-right: auto;
 }
 
+.portfolio-item__img {
+    margin-top: 2em;
+    margin-bottom: 3em;
+}
 
+.portfolio-item-individual a {
+    text-decoration: none;
+    font-weight: var(--fw-bold);
+    color: var(--clr-dark);
+}
 
+.portfolio-item-individual a:hover {
+    color: var(--clr-accent);
+    background: var(--clr-dark);
+    padding: .1em .3em;
+}
 
+.portfolio-item-hightlight {
+    background: var(--clr-dark);
+    color: var(--clr-accent);
+    padding: .25em;
+    margin-top: 2em;
+    margin-bottom: 3em;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
+.portfolio-item-hightlight li {
+    list-style:square;
+    position: relative;    
+}
 
+.portfolio-item-hightlight ul {
+    line-height: 2em;
+    padding: 0 4em 1em;
+}
+
+.portfolio-item-hightlight p {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: var(--fs-h3);
+    letter-spacing: .1em;
+}
 
 
 
