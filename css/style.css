@@ -17,7 +17,7 @@
     --clr-dark: #303030;
     --clr-accent: #74CAF1;
     
-    --fs-h1: 3rem;
+    --fs-h1: 2.75rem;
     --fs-h2: 2.25rem;
     --fs-h3: 1.25rem;
     --fs-body: 1rem;
@@ -26,10 +26,10 @@
           0.125em 0.125em 0.25em rgba(0,0,0,.15);
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1050px) {
     :root {
-        --fs-h1: 4.5rem;
-        --fs-h2: 3.75rem;
+        --fs-h1: 4rem;
+        --fs-h2: 3.25rem;
         --fs-h3: 1.5rem;
         --fs-body: 1.125rem;
     }
@@ -52,7 +52,6 @@ body {
 
 section {
     padding: 4em 2em 3em 2em;
-
     @media (min-width: 600px) {
         padding: 5em 2em;
     }
@@ -116,6 +115,9 @@ h3 { font-size: var(--fs-h3) }
     display: block;
 }
 
+.section__title--intro strong span{
+    font-size: var(--fs-h2);
+}
 .section__subtitle {
     margin: 0;
     font-size: var(--fs-h3);
@@ -256,17 +258,19 @@ header {
 
 .intro {
     position: relative;
+
 }
 
 .intro__img {
     box-shadow: var(--bs);
+    margin: 0 auto;
 }
 
 .section__subtitle--intro {
     display: inline-block;
 }
 
-@media (min-width: 750px) {
+@media (min-width: 800px) {
     .intro {
         display: grid;
         width: min-content;
