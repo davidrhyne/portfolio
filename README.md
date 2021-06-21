@@ -1,19 +1,34 @@
-# title(){
-		
-		return this.options.title || this.options.name;
-	}
+# My portfolio website
 
-## Supporting Scrimba
+This is a website hosted on Heroku that displays some projects that I have done, mostly through frontendmentor.io.
 
-Since 2017, we have created over 20 free courses on Scrimba, and we're going to
-continue launching free courses. But to pay our bills, we have to charge once
-in a while. So if you've ever wanted to "give back" to Scrimba, you can do that by buying
-	one of our paid courses
+## Table of contents
 
-- [Become a professional React developer](https://scrimba.com/course/greact)
-- [The Responsive Web Design Bootcamp](https://scrimba.com/course/gresponsive)
-- [The Ultimate JavaScript Bootcamp](https://scrimba.com/course/gjavascript)
+- [Overview](#overview)
+  - [Links](#links)
+  - [Built with](#built-with)
+- [Author](#author)
 
-	It would also mean the world to us if you share the courses.  
+## Overview
 
-Happy Coding!
+This website is based on a Scrimba course "Build and deploy your portfolio" by Kevin Powell.  Kevin is an excellent teacher and I would recommend him for learning all things CSS.  And Scrimba.com is an excellent place to learn JavaScript, React, HTML, CSS, and many other topics.
+
+### Links
+
+- Scrimba's tutorial: [Scrimba](https://scrimba.com/learn/portfolio)
+- FrontendMentor: [Frontendmentor](https://www.frontendmentor.io/)
+
+### Built with
+
+- Mobile-first workflow
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- CSS Grid
+- JavaScript
+
+## Author
+
+- Frontend Mentor - [@davidrhyne](https://www.frontendmentor.io/profile/davidrhyne)
+- Twitter - [@DavidRhyne16](https://www.twitter.com/DavidRhyne16)
+
