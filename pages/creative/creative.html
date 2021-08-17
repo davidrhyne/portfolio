@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>David's Creative Single Page Project</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />          
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:400,900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="../../css/style.css">
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <p>
+                    <i class="fas fa-chevron-left"></i>david
+                    <i class="fas fa-chevron-right"></i>
+                </p>
+            </div>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="/" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="/#services" class="nav__link">My Services</a></li>
+                    <li class="nav__item"><a href="/#about" class="nav__link">About me</a></li>
+                    <li class="nav__item"><a href="/#work" class="nav__link">My Work</a></li>
+                </ul>
+            </nav>
+        </header>        
+
+        <section class="intro">
+            <h1 class="section__title section__title--intro">
+                frontend mentor's <strong>Creative Single Page</strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">built with HTML5 and Sass</p>
+            <img src="./creative-480.png" alt="" class="intro__img">
+        </section>
+        
+        <div class="portfolio-item-individual">
+            <p>This is a <a href="https://www.frontendmentor.io/challenges/creative-agency-singlepage-site-Pq6V3I2RM" target="_blank">frontendmentor.io project</a> to build an webpage to design specifications that will look great on any device. The <a href="https://github.com/davidrhyne/creative-single-page-site" target="_blank">code</a> and <a href="https://davidrhyne.github.io/creative-single-page-site/" target="_blank">live application</a> are hosted on github!</p>
+            <img src="./github-social-preview.png" alt="collage of desktop and mobile views of creative web page" class="portfolio-item__img">
+            
+            <div class="portfolio-item-hightlight">
+                <p><strong>Highlights</strong></p>
+                <ul>
+                    <li>Coded from scratch with HTML5 and Sass</li>
+                    <li>Challenging CSS Grid implementation</li>
+                    <li>CSS variables used for easy updates</li>
+                    <li>Mobile-first workflow and Responsive</li>
+                    <li>JavaScript for navigation and carousel controls</li>
+                </ul>
+            </div>
+            <p><strong>My Experience</strong></p>
+            <p>I picked this frontendmentor project to get more experience with using Sass and Grid, and I was not disappointed. </p> 
+            <p>The primary lesson learned was how to structure the HTML when there will be overlapping elements within a grid. Specifically, all the interacting elements will need to be within the same grid.</p> 
+            <p>Secondly, CSS grid uses a parent to child relationship. Therefore, an element that will placed by the grid needs to be a child to the parent of the grid element. The child element may be a div that contains other elements, but grid will only place that container div. Grid will not be able to access any elements within the container div.</p>
+            <p>Up until this project, I have found nature divisions within a website to create distinct section's/div's. For this project, the design and services sections were combined to allow their elements to overlap when CSS grid was used for the tablet and desktop resolutions. Likewise, sections for displaying the projects and navigating those projects (carousel) were combined into a single div to allow their elements to overlap as well.</p>                
+            <p>Going forward, I will be more aware of these overlapping elements and make sure to structure the HTML accordingly.</p>              
+        </div>       
+        
+        <!-- Footer -->
+        <footer class="footer">
+            <a href="mailto:rhynedavid16@gmail.com" class="footer__link">rhynedavid16@gmail.com</a>
+            <ul class="social-list">
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://www.linkedin.com/in/david-rhyne-06321b11/" target="_blank">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://github.com/davidrhyne"  target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://twitter.com/DavidRhyne16"  target="_blank">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </li>
+            </ul>
+        </footer>                
+        <script src="../../src/index.js"></script>        
+    </body>
+</html>
